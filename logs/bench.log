@@ -1,0 +1,116 @@
+2024-03-11 13:41:45,442 DEBUG cd nurses && python3 -m venv env
+2024-03-11 13:41:48,800 DEBUG cd nurses && /home/iguanya/nurses/env/bin/python -m pip install --quiet --upgrade pip
+2024-03-11 13:41:51,637 DEBUG cd nurses && /home/iguanya/nurses/env/bin/python -m pip install --quiet wheel
+2024-03-11 13:41:54,444 LOG Getting frappe
+2024-03-11 13:41:54,444 DEBUG cd nurses/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-03-11 13:42:37,782 LOG Installing frappe
+2024-03-11 13:42:37,782 DEBUG cd /home/iguanya/nurses && /home/iguanya/nurses/env/bin/python -m pip install --quiet --upgrade -e /home/iguanya/nurses/apps/frappe 
+2024-03-11 13:44:29,515 DEBUG cd /home/iguanya/nurses/apps/frappe && yarn install
+2024-03-11 13:44:57,220 DEBUG cd /home/iguanya/nurses && sudo supervisorctl restart frappe:
+2024-03-11 13:44:57,459 WARNING cd /home/iguanya/nurses && sudo supervisorctl restart frappe: executed with exit code 2
+2024-03-11 13:44:57,459 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-03-11 13:44:57,459 DEBUG cd nurses && bench build
+2024-03-11 13:44:57,582 INFO /home/iguanya/.local/bin/bench build
+2024-03-11 13:45:23,618 LOG setting up backups
+2024-03-11 13:45:23,637 LOG backups were set up
+2024-03-11 13:45:23,639 INFO Bench nurses initialized
+2024-03-11 13:45:24,710 INFO A newer version of bench is available: 5.21.0 → 5.22.3
+2024-03-11 13:45:37,430 INFO /home/iguanya/.local/bin/bench start
+2024-03-11 13:45:37,933 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-11 13:45:37,987 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-11 13:45:37,997 INFO /home/iguanya/.local/bin/bench watch
+2024-03-11 13:45:38,026 INFO /home/iguanya/.local/bin/bench worker
+2024-03-11 13:46:45,751 INFO /home/iguanya/.local/bin/bench new-site nurses.com
+2024-03-11 13:47:43,944 INFO /home/iguanya/.local/bin/bench start
+2024-03-11 13:47:44,396 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-11 13:47:44,405 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-11 13:47:44,435 INFO /home/iguanya/.local/bin/bench worker
+2024-03-11 13:47:44,447 INFO /home/iguanya/.local/bin/bench watch
+2024-03-11 13:48:22,750 INFO /home/iguanya/.local/bin/bench --site nurses.com install-app frappe
+2024-03-11 13:48:45,599 INFO /home/iguanya/.local/bin/bench use nurses.com
+2024-03-11 13:48:51,080 INFO /home/iguanya/.local/bin/bench start
+2024-03-11 13:48:51,494 INFO /home/iguanya/.local/bin/bench watch
+2024-03-11 13:48:51,511 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-11 13:48:51,542 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-11 13:48:51,583 INFO /home/iguanya/.local/bin/bench worker
+2024-03-11 14:10:56,471 INFO /home/iguanya/.local/bin/bench new-app nurses
+2024-03-11 14:10:56,478 LOG creating new app nurses
+2024-03-11 14:11:44,647 LOG Installing nurses
+2024-03-11 14:11:44,649 DEBUG cd /home/iguanya/nurses && /home/iguanya/nurses/env/bin/python -m pip install --quiet --upgrade -e /home/iguanya/nurses/apps/nurses 
+2024-03-11 14:11:47,863 DEBUG bench build --app nurses
+2024-03-11 14:11:47,959 INFO /home/iguanya/.local/bin/bench build --app nurses
+2024-03-11 14:11:56,842 DEBUG cd /home/iguanya/nurses && sudo supervisorctl restart frappe:
+2024-03-11 14:11:57,029 WARNING cd /home/iguanya/nurses && sudo supervisorctl restart frappe: executed with exit code 2
+2024-03-11 14:11:57,030 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-03-11 14:11:57,858 INFO A newer version of bench is available: 5.21.0 → 5.22.3
+2024-03-11 14:13:01,252 INFO /home/iguanya/.local/bin/bench --site nurses.com install-app nurses
+2024-03-11 14:13:47,447 INFO /home/iguanya/.local/bin/bench build
+2024-03-11 14:13:47,449 INFO /home/iguanya/.local/bin/bench migrate
+2024-03-11 14:14:50,391 INFO /home/iguanya/.local/bin/bench start
+2024-03-11 14:14:50,722 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-11 14:14:50,734 INFO /home/iguanya/.local/bin/bench worker
+2024-03-11 14:14:50,781 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-11 14:14:50,785 INFO /home/iguanya/.local/bin/bench watch
+2024-03-11 14:14:54,490 INFO /home/iguanya/.local/bin/bench build
+2024-03-11 14:14:54,497 INFO /home/iguanya/.local/bin/bench migrate
+2024-03-11 14:48:49,397 INFO /home/iguanya/.local/bin/bench start
+2024-03-11 14:48:49,837 INFO /home/iguanya/.local/bin/bench worker
+2024-03-11 14:48:49,922 INFO /home/iguanya/.local/bin/bench watch
+2024-03-11 14:48:49,944 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-11 14:48:49,965 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-11 14:51:03,466 INFO /home/iguanya/.local/bin/bench build
+2024-03-11 14:51:03,466 INFO /home/iguanya/.local/bin/bench migrate
+2024-03-11 14:53:53,785 INFO /home/iguanya/.local/bin/bench start
+2024-03-11 14:53:54,279 INFO /home/iguanya/.local/bin/bench watch
+2024-03-11 14:53:54,298 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-11 14:53:54,320 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-11 14:53:54,338 INFO /home/iguanya/.local/bin/bench worker
+2024-03-11 15:03:12,807 INFO /home/iguanya/.local/bin/bench build
+2024-03-11 15:03:12,817 INFO /home/iguanya/.local/bin/bench migrate
+2024-03-11 15:03:43,281 INFO /home/iguanya/.local/bin/bench migrate
+2024-03-11 15:10:31,397 INFO /home/iguanya/.local/bin/bench build
+2024-03-11 15:12:17,571 INFO /home/iguanya/.local/bin/bench migrate
+2024-03-11 15:12:25,472 INFO /home/iguanya/.local/bin/bench build
+2024-03-11 15:20:28,016 INFO /home/iguanya/.local/bin/bench migrate
+2024-03-11 15:20:36,551 INFO /home/iguanya/.local/bin/bench build
+2024-03-11 15:21:10,333 INFO /home/iguanya/.local/bin/bench start
+2024-03-11 15:21:10,826 INFO /home/iguanya/.local/bin/bench worker
+2024-03-11 15:21:10,836 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-11 15:21:10,868 INFO /home/iguanya/.local/bin/bench watch
+2024-03-11 15:21:10,871 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-11 15:23:42,612 INFO /home/iguanya/.local/bin/bench migrate
+2024-03-11 15:23:52,086 INFO /home/iguanya/.local/bin/bench build
+2024-03-11 17:27:00,131 INFO /home/iguanya/.local/bin/bench build --app nurses
+2024-03-11 17:28:27,992 INFO /home/iguanya/.local/bin/bench build --app nurses
+2024-03-11 17:28:42,501 INFO /home/iguanya/.local/bin/bench build --app nurses
+2024-03-11 17:28:54,499 INFO /home/iguanya/.local/bin/bench migrate
+2024-03-11 17:29:08,883 INFO /home/iguanya/.local/bin/bench build --app nurses
+2024-03-11 17:42:08,603 INFO /home/iguanya/.local/bin/bench build
+2024-03-11 17:42:55,280 INFO /home/iguanya/.local/bin/bench migrate
+2024-03-11 17:43:10,468 INFO /home/iguanya/.local/bin/bench start
+2024-03-11 17:43:11,119 INFO /home/iguanya/.local/bin/bench worker
+2024-03-11 17:43:11,140 INFO /home/iguanya/.local/bin/bench watch
+2024-03-11 17:43:11,142 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-11 17:43:11,242 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-11 18:00:02,183 INFO /home/iguanya/.local/bin/bench --verbose --site all backup
+2024-03-12 14:24:55,094 INFO /home/iguanya/.local/bin/bench start
+2024-03-12 14:24:55,566 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-12 14:24:55,578 INFO /home/iguanya/.local/bin/bench watch
+2024-03-12 14:24:55,590 INFO /home/iguanya/.local/bin/bench worker
+2024-03-12 14:24:55,603 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-12 18:00:07,719 INFO /home/iguanya/.local/bin/bench --verbose --site all backup
+2024-03-13 13:58:52,490 INFO /home/iguanya/.local/bin/bench start
+2024-03-13 13:58:53,550 INFO /home/iguanya/.local/bin/bench worker
+2024-03-13 13:58:53,600 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-13 13:58:53,666 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-13 13:58:53,867 INFO /home/iguanya/.local/bin/bench watch
+2024-03-13 13:59:36,963 INFO /home/iguanya/.local/bin/bench start
+2024-03-13 13:59:37,873 INFO /home/iguanya/.local/bin/bench watch
+2024-03-13 13:59:37,944 INFO /home/iguanya/.local/bin/bench worker
+2024-03-13 13:59:38,053 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-13 13:59:38,150 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-13 14:01:15,709 INFO /home/iguanya/.local/bin/bench start
+2024-03-13 14:01:16,695 INFO /home/iguanya/.local/bin/bench schedule
+2024-03-13 14:01:16,775 INFO /home/iguanya/.local/bin/bench worker
+2024-03-13 14:01:16,800 INFO /home/iguanya/.local/bin/bench serve --port 8005
+2024-03-13 14:01:16,912 INFO /home/iguanya/.local/bin/bench watch

@@ -1,0 +1,12 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_2973657d4ed80676 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _2973657d4ed80676 | /usr/bin/gzip >> ./nurses.com/private/backups/20240311_180003-nurses_com-database.sql.gz
+
+Backup Summary for nurses.com at 2024-03-11 18:00:04.039085
+Config  : /home/iguanya/nurses/sites/nurses.com/private/backups/20240311_180003-nurses_com-site_config_backup.json 127.0B
+Database: /home/iguanya/nurses/sites/nurses.com/private/backups/20240311_180003-nurses_com-database.sql.gz 297.8KiB
+Backup for Site nurses.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_2973657d4ed80676 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _2973657d4ed80676 | /usr/bin/gzip >> ./nurses.com/private/backups/20240312_180009-nurses_com-database.sql.gz
+
+Backup Summary for nurses.com at 2024-03-12 18:00:11.081056
+Config  : /home/iguanya/nurses/sites/nurses.com/private/backups/20240312_180009-nurses_com-site_config_backup.json 127.0B
+Database: /home/iguanya/nurses/sites/nurses.com/private/backups/20240312_180009-nurses_com-database.sql.gz 358.9KiB
+Backup for Site nurses.com has been successfully completed
